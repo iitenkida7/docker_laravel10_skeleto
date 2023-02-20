@@ -8,7 +8,7 @@ services:
       - "443:443"
     depends_on:
       - laravel
-      - mailhog
+      - mailpit
     working_dir: /var/www
     volumes:
       - ./docker/nginx/ssl/server.crt:/etc/nginx/ssl/server.crt
