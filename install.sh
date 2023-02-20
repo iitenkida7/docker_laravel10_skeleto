@@ -19,8 +19,8 @@ SSL_DIR=./docker/nginx/ssl
 openssl req -x509 -sha256 -nodes -days 3650 -newkey rsa:2048 -subj /CN=localhost -keyout ${SSL_DIR}/server.key -out ${SSL_DIR}/server.crt
 
 #Build docker-compose.yml
-sed -i "s/__UID__/${UID}/g" docker-compose.yml
-sed -i "s/__GID__/${GID}/g" docker-compose.yml
+sed -i "s/__UID__/$(id -u)/g" docker-compose.yml
+sed -i "s/__GID__/$(id -g)/g" docker-compose.yml
 
 #Build container
 docker-compose build #--pull --no-cache
