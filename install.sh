@@ -12,7 +12,7 @@ fi
 
 cd ${INSTALL_DIR}
 
-git clone git@github.com:iitenkida7/docker_laravel9_skeleton.git .
+git clone git@github.com:iitenkida7/docker_laravel10_skeleton.git .
 
 #Install ssl to nginx
 SSL_DIR=./docker/nginx/ssl

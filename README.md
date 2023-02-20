@@ -1,5 +1,5 @@
-# docker_laravel9_skeleton
-* Docker x Laravel9 の 一発環境構築
+# docker_laravel10_skeleton
+* Docker x Laravel10 の 一発環境構築
 
 ## Install
 
@@ -7,7 +7,7 @@
 * 今の所 Macを 想定。
 
 ```
-/bin/bash -ec "$(curl -fsSL https://raw.githubusercontent.com/iitenkida7/docker_laravel9_skeleton/main/install.sh)"
+/bin/bash -ec "$(curl -fsSL https://raw.githubusercontent.com/iitenkida7/docker_laravel10_skeleton/main/install.sh)"
 ```
 
 * ブラウザでSSL証明書エラーでアクセスできない場合は、以下のコマンドを実行 （パスは適宜変更）
